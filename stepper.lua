@@ -107,7 +107,7 @@ do
         -- D7 < ------ > IN3
         -- D8 < ------ > IN4
     local init = function ( pins )
-        if not pins or not interval then
+        if not pins then
             print('Init params missing !!! initializing with defaults')
             local motor_pins = motor_params.pins;
             for i,pin in ipairs( motor_pins ) do
